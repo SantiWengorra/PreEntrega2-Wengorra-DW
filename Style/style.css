@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 0;
+}
+
+/*! HEADER */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    color: #eecd4e;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 15px;
+    justify-content: center;
+    background-color: rgb(148, 148, 148);
+    box-shadow: inset 0 0 5px #000;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 10px; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.actual {
+    box-shadow: inset 0 0 5px #000;
+    background-color: #eecd4e;
+    border: black;
+    border-radius: 4px;
+    color: black;
+    text-shadow: 0 0 0 #000;
+}
+
+.actual:hover {
+    transition: 0.2s;
+    box-shadow: 5px 5px 10px #000;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+li:hover :not(.actual){
+    background-color: #00000036;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #000;
+    padding: 10px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.ImgPrincipal {
+    background-image: url(../Images/Lapicera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.Imglaboral {
+    background-image: url(../Images/Laboral.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.Imgcivil {
+    background-image: url(../Images/Civil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.Imgencuentranos {
+    background-image: url(../Images/Maps.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.Imgnosotros {
+    background-image: url(../Images/Nosotros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.subtitulo {
+    text-shadow: 2px 2px 4px #000;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    background-color: #585555;
+    border: 1px solid white;
+    width: 100%;
+    box-shadow: inset 0 0 15px #000;
+}
+
+.subtitulo:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: blur(2px);
+}
+
+/*! CONTACTO */
+
+.contacto {
+    box-shadow: inset 0 0 15px #000;
+    width: 100%;
+    min-height: 55px;
+    max-height: 100%;
+    background-color: #eecd4e;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+
+.contacto h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacto a:hover {
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.2s;
+}
+
+/*! CONSULTA */
+
+.consulta {
+    min-height: 600px;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    background-color: #033441;
+    box-shadow: inset 0 0 30px #000;
+}
+
+.cartelConsulta {
+    width: 90%;
+    min-height: 20%;
+    max-height: 100%;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #044253;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.cartelConsulta:hover {
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.2s;
+    background-color: rgb(5, 53, 66);
+}
+
+.cartelConsulta h3 {
+    font-size: 37px;
+    color: #eecd4e;
+    margin-bottom: 10px;
+    text-decoration:underline;
+}
+
+.consulta article {
+    width: 95%;
+    min-height: 90%;
+    max-height: 100%;
+    background-image: url(../Images/Consulta.jpg);
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 13px 37px #000;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-block: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.columnadoble {
+    display: flex;
+    gap: 30px;
+}
+
+.consulta article h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    margin-block: 25px;
+}
+
+.consulta article:hover {
+    text-shadow: 2px 2px 4px #000;
+    text-decoration:underline;
+    color: white;
+    transition: 0.2s;
+}
+
+.controls {
+    background: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid White;
+    position:static;
+    backdrop-filter: blur(10px);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    resize: none;
+}
+
+.controls:hover {
+    background-color: rgba(0, 0, 0, 0.172);
+    text-decoration:underline;
+    transition: 0.5s;
+}
+
+.controls::placeholder {
+    color: white;
+}
+
+.button {
+    border: 1px solid White;
+    padding: 5px;
+    border-radius: 4px;
+    background: none;
+    Color: White;
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/*! MAPA PRINCIPAL/ENCUENTRANOS */
+
+.encuentro {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    box-shadow: inset 0 0 30px #000;
+    text-align: center;
+    background-color: rgb(138, 138, 138);
+}
+
+.encuentro iframe {
+    width: 100%;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 10px;
+}
+
+.cartelEncuentro {
+    min-height: 300px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #515353;
+    margin: 50px;
+}
+
+.cartelEncuentro h3 {
+    font-size: 37px;
+    color: #eecd4e;
+    margin-bottom: 10px;
+    text-decoration:underline;
+}
+
+.cartelEncuentro p {
+    margin: 10px;
+}
+
+.cartelEncuentro:hover {
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.5s;
+    background-color:#00000074 ;
+}
+
+.cartelEncuentro a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px;
+    min-width: 100px;
+    align-self: center;
+    margin-block: 15px;
+}
+
+.cartelEncuentro a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/*! CONTENIDO  */
+
+.carousel-item {
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+    min-height: 600px;
+    box-shadow: inset 0px 10px 20px -6px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 7px 13px 37px #000;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    max-height: 100%;
+    background-color: rgb(53, 53, 53);
+    margin: 50px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 0 30px #000;
+}
+
+.text-card p {
+    margin-block: 15px;
+}
+
+.text-card a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px;
+    min-width: 100px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.text-card a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.text-card:hover {
+    background-color: #00000089;
+    transition: 0.3s;
+}
+
+.text-card:hover :not(a) {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/*! DERECHO LABORAL/CIVIL */
+
+.text {
+    display: grid;
+    grid-template-areas: 
+    "box1 box1 box2"
+    "box1 box1 box3";
+    min-height: 800px;
+    max-height: 100%;
+    background-color: #3a3b3b;
+    color: white;
+    text-align: center;
+}
+
+/*? Caja 1 */
+
+.text-box {
+    min-height: 500px;
+    max-height: 100%;
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    background-color: #222222;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 7px 13px 30px #000;
+}
+
+/*? Caja 2 */
+
+.img1-box {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 7px 13px 30px #000;
+}
+
+.img1-box:hover {
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.img1-box:hover img {
+    width: 205px;
+    height: 205px;
+    transition: 0.5s;
+}
+
+.img1-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 7px 13px 37px #000;
+    border: 2px solid white;
+    margin-block: 10px;
+}
+
+/*? Caja 3 */
+
+.img2-box {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 7px 13px 30px #000;
+}
+
+.img2-box:hover {
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.img2-box:hover img {
+    width: 205px;
+    height: 205px;
+    transition: 0.5s;
+}
+
+.img2-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 7px 13px 37px #000;
+    border: 2px solid white;
+    margin-block: 10px;
+}
+
+/*! NOSOTROS */
+
+/*? Personal */
+
+.personal {
+    background-color: rgba(2, 2, 2, 0.711);
+    color: white;
+    box-shadow: inset 0 0 15px 5px #000;
+}
+
+.abogado{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    text-align: center;
+}
+
+.abogado img {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    margin-right: 0;
+    border-radius: 50px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.abogado img:hover {
+    width: 310px;
+    height: 310px;
+    transition: 0.5s;
+}
+
+.abogado h3 {
+    font-size: 37px;
+    color: #e69411;
+    margin-bottom: 10px;
+}
+
+.abogado-text {
+    min-width: 300px;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 100%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #474747;
+    margin-inline: 200px;
+    margin-block: 20px;
+}
+
+.abogado-text h3 {
+    margin-top: 25px;
+}
+
+.abogado-text:hover {
+    background-color: #0000006f;
+    transition: 0.5s;
+}
+
+.abogado-text:hover h3 {
+    text-decoration: underline;
+}
+
+/*? Historia */
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2e2e2e;
+    box-shadow: inset 0 0 37px #000;
+    color: white;
+}
+
+.historia img {
+    width: 700px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+    margin-block: 20px;
+}
+
+.historia p {
+    margin-block: 20px;
+}
+
+.historia h3 {
+    text-decoration: underline;
+}
+
+/*! FOOTER */
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: #eecd4e;
+    text-decoration: none;
+}
+
+/*! MEDIA */
+
+@media (max-width: 1500px) {
+    .text {
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3";
+    }
+    .text-box, .img1-box, .img2-box {
+        margin-block: 30px;
+    }
+    .abogado {
+        display: flex;
+        flex-direction: column;
+    }
+    .abogado img {
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .text-box:hover {
+        margin: 90px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 1100px) {
+    .consulta {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }  
+    .cartelConsulta {
+        margin-left: 0px;
+        margin-block: 10px;
+        width: 100%;
+    }
+    .columnadoble {
+        display: flex;
+        flex-direction: column;
+    }
+    .consulta article {
+        width: 100%;
+    }
+    .button {
+        margin-bottom: 10px;
+    }
+    .encuentro {
+        grid-template-columns: 100%;
+    }
+
+    .encuentro iframe {
+        margin: 0;
+    }
+    .historia img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .historia img:hover {
+        width: 710px;
+        height: 510px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo h1 {
+        font-size: 45px;
+    }
+    .contacto {
+        font-size: 30px;
+    }
+    .subtitulo {
+        top: 500px;
+    }
+}
+
+@media (max-width: 616px) {
+    .contacto h3 {
+        font-size: 30px;
+        min-height: 45px;
+        max-height: 100%;
+    }
+}
+
+::selection {
+    background-color: orange;
+    color: white;
+}
